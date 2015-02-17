@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   root :to => "recipes#new"
+  
+
+
+
   devise_for :users
   resources :recipes
+  resources :events
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

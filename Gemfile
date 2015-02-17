@@ -44,5 +44,6 @@ group :development, :test do
   gem 'devise', github: 'plataformatec/devise'
   gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
   gem 'better_errors'
+  gem 'friendly_id', '5.1.0'
 end
 
