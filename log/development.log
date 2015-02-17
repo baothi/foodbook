@@ -16937,3 +16937,175 @@ Started POST "/__better_errors/f62eca77b190365c/variables" for 127.0.0.1 at 2015
 
 
 Started POST "/__better_errors/f62eca77b190365c/variables" for 127.0.0.1 at 2015-02-17 16:30:47 +0700
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:21 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.5ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mFoodType Load (0.4ms)[0m  [1mSELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFoodPreference Load (0.3ms)[0m  SELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCuisine Load (0.2ms)[0m  [1mSELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  [1m[35mFoodPreference Load (0.3ms)[0m  SELECT "food_preferences".* FROM "food_preferences"
+  [1m[36mFoodType Load (0.2ms)[0m  [1mSELECT "food_types".* FROM "food_types"[0m
+  [1m[35mCuisine Load (0.2ms)[0m  SELECT "cuisines".* FROM "cuisines"
+  Rendered layouts/_aside.html.erb (2.2ms)
+Completed 200 OK in 289ms (Views: 263.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/twitter/bootstrap-3a95aaa8e5e3096a81d396962edb7c08.css?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/recipes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/scaffolds-333a74d778c7a87f4a78f6d9e0276077.css?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-4b4fbd07e97c2abd30f2dd6eebc6ecce.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/recipes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/application-4f6be1e23e9c8f8c5eb9d3fe045b1e80.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/application-dcc2846b6578b0666535d9947fa1b61c.css?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition-6f6f8b2ad9135b5a17cc6f89581083ed.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel-b6afdf38f8b2c357b6a6fd03df3a8c99.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button-53a5a7d2989ab0c1ef45a504b34d882b.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert-3fe6900b3535e731d557800e29c0b53c.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse-c16c7e2313d69176095c6fd3431f9023.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-642d68c368e8a6d0b72d966d14412a67.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal-f5cdd5e8af0fa54759ac2380f59b71e8.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-fddc00cd357b691a307075c5babbcf13.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover-f8a450b5a974d8394248dc9f9390135d.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab-54af55dd6fc4560edb0a63a6a77df769.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix-8c4fd34e4fa208b9c3bab211c9c9f778.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap-78e8884b0933980bc56c40d310e76d30.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-17 16:37:22 +0700
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:35 +0700
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mFoodType Load (0.3ms)[0m  SELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mFoodPreference Load (0.4ms)[0m  [1mSELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCuisine Load (0.5ms)[0m  SELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  [1m[36mFoodPreference Load (0.7ms)[0m  [1mSELECT "food_preferences".* FROM "food_preferences"[0m
+  [1m[35mFoodType Load (0.4ms)[0m  SELECT "food_types".* FROM "food_types"
+  [1m[36mCuisine Load (0.4ms)[0m  [1mSELECT "cuisines".* FROM "cuisines"[0m
+  Rendered layouts/_aside.html.erb (3.2ms)
+Completed 200 OK in 136ms (Views: 132.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:36 +0700
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mFoodType Load (0.3ms)[0m  [1mSELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFoodPreference Load (0.4ms)[0m  SELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCuisine Load (0.4ms)[0m  [1mSELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  [1m[35mFoodPreference Load (0.8ms)[0m  SELECT "food_preferences".* FROM "food_preferences"
+  [1m[36mFoodType Load (0.5ms)[0m  [1mSELECT "food_types".* FROM "food_types"[0m
+  [1m[35mCuisine Load (0.5ms)[0m  SELECT "cuisines".* FROM "cuisines"
+  Rendered layouts/_aside.html.erb (3.3ms)
+Completed 200 OK in 143ms (Views: 139.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:36 +0700
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mFoodType Load (0.4ms)[0m  SELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mFoodPreference Load (0.3ms)[0m  [1mSELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCuisine Load (0.3ms)[0m  SELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  [1m[36mFoodPreference Load (0.3ms)[0m  [1mSELECT "food_preferences".* FROM "food_preferences"[0m
+  [1m[35mFoodType Load (0.2ms)[0m  SELECT "food_types".* FROM "food_types"
+  [1m[36mCuisine Load (0.2ms)[0m  [1mSELECT "cuisines".* FROM "cuisines"[0m
+  Rendered layouts/_aside.html.erb (2.8ms)
+Completed 200 OK in 141ms (Views: 137.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:37 +0700
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mFoodType Load (0.5ms)[0m  [1mSELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFoodPreference Load (0.4ms)[0m  SELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCuisine Load (0.3ms)[0m  [1mSELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  [1m[35mFoodPreference Load (0.4ms)[0m  SELECT "food_preferences".* FROM "food_preferences"
+  [1m[36mFoodType Load (0.2ms)[0m  [1mSELECT "food_types".* FROM "food_types"[0m
+  [1m[35mCuisine Load (0.3ms)[0m  SELECT "cuisines".* FROM "cuisines"
+  Rendered layouts/_aside.html.erb (2.3ms)
+Completed 200 OK in 139ms (Views: 136.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:37 +0700
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mFoodType Load (0.2ms)[0m  SELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mFoodPreference Load (0.2ms)[0m  [1mSELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCuisine Load (0.5ms)[0m  SELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  [1m[36mFoodPreference Load (0.4ms)[0m  [1mSELECT "food_preferences".* FROM "food_preferences"[0m
+  [1m[35mFoodType Load (0.3ms)[0m  SELECT "food_types".* FROM "food_types"
+  [1m[36mCuisine Load (0.2ms)[0m  [1mSELECT "cuisines".* FROM "cuisines"[0m
+  Rendered layouts/_aside.html.erb (2.2ms)
+Completed 200 OK in 142ms (Views: 139.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2015-02-17 16:37:37 +0700
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.6ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mFoodType Load (0.6ms)[0m  [1mSELECT  "food_types".* FROM "food_types" WHERE "food_types"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFoodPreference Load (0.6ms)[0m  SELECT  "food_preferences".* FROM "food_preferences" WHERE "food_preferences"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCuisine Load (0.4ms)[0m  [1mSELECT  "cuisines".* FROM "cuisines" WHERE "cuisines"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  [1m[35mFoodPreference Load (0.3ms)[0m  SELECT "food_preferences".* FROM "food_preferences"
+  [1m[36mFoodType Load (0.2ms)[0m  [1mSELECT "food_types".* FROM "food_types"[0m
+  [1m[35mCuisine Load (0.2ms)[0m  SELECT "cuisines".* FROM "cuisines"
+  Rendered layouts/_aside.html.erb (2.0ms)
+Completed 200 OK in 134ms (Views: 130.6ms | ActiveRecord: 2.9ms)
