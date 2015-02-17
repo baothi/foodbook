@@ -1,5 +1,5 @@
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default ">
   <div class="container">
     <div class="navbar-header">
       <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -31,7 +31,8 @@
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
             <li><%=link_to "#{current_user.email}" %></li>
-            <li class="active"><%= link_to "Logout",destroy_user_session_path%></li>
+            <li class="active"><%= link_to "Logout",destroy_user_session_path, method:
+:delete %></li>
             <%else%>
             <li><%= link_to "Login", new_user_session_path %></li>
             <li class="active"><%= link_to "SignUp",new_user_registration_path%></li>
