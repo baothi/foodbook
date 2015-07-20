@@ -14,11 +14,7 @@
 ActiveRecord::Schema.define(version: 20150217104442) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "edbspl"
   enable_extension "plpgsql"
-  enable_extension "edb_dblink_libpq"
-  enable_extension "edb_dblink_oci"
-  enable_extension "pldbgapi"
 
   create_table "cuisines", force: :cascade do |t|
     t.string   "name"

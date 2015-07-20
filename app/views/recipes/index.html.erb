@@ -1,7 +1,7 @@
 
 <% if user_signed_in? %>
-<td><%= link_to 'Edit', edit_recipe_path(recipe),:class=>"btn btn-success btn-small"%></td>
-<td><%= link_to 'Delete', recipe, method: :delete,data: { confirm: 'Are you sure?' }, :class=>"btn btn-danger btn-small" %></td>
+<td><%= link_to 'Edit', edit_recipe_path(@recipes),:class=>"btn btn-success btn-small"%></td>
+<td><%= link_to 'Delete', @recipe, method: :delete,data: { confirm: 'Are you sure?' }, :class=>"btn btn-danger btn-small" %></td>
 <%end%>
 
 <p id="notice"><%= notice %></p>
@@ -26,6 +26,7 @@
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
+        <%= byebug %>
         <td><%= recipe.title %></td>
         <td><%= recipe.cooking_time %></td>
         <td><%= recipe.difficulty_level %></td>

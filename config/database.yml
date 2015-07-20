@@ -21,7 +21,7 @@ development:
   host: localhost
   port: 5432
   pool: 5
-  username: baothi
+  username: postgres
   password: 123456
   schema_search_path: public
 
@@ -35,7 +35,7 @@ test:
   host: localhost
   port: 5432
   pool: 5
-  username: baothi
+  username: postgres
   password: 123456
   schema_search_path: public
 

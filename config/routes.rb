@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
   root :to => "recipes#new"
-  
-
-
-
   devise_for :users
   resources :recipes
   resources :events
