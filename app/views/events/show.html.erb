@@ -35,5 +35,10 @@
   <%= @event.organizer_id %>
 </p>
 
+<p>
+  <%=raw event.tags.map(&:name).map{ |t| t}.join(',') %>
+</p>
+
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
